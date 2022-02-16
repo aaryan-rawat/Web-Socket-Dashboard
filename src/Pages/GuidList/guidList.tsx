@@ -72,11 +72,6 @@ export default function GuidList() {
                     onClick: (event, rowData) => {
                       navigate('/usercountgroup',{state:{...rowData,data}});
                     } 
-                  },
-                  {
-                    icon: Delete,
-                    tooltip: 'Delete session',
-                    onClick: (event, rowData) => console.log("You want to delete ", rowData)
                   }
 
                 ]}

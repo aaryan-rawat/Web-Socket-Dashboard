@@ -79,11 +79,6 @@ function AppList() {
                       navigate('/guidlist',{state:{...rowData}});
                      
                     }
-                  },
-                  {
-                    icon: Delete,
-                    tooltip: 'Delete session',
-                    onClick: (event, rowData) => console.log("You want to delete ", rowData)
                   }
 
                 ]}

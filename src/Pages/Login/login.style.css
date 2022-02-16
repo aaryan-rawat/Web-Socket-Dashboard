@@ -1,5 +1,6 @@
 .main-container{
     display:flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -8,13 +9,17 @@
     font-family: 'Noto Sans', sans-serif;
 }
 
+.header{
+    padding-bottom: 20px;
+}
+
 .form-box{
     width: 85vw;
     height: 80vh;
     background: rgba(255,255,255,0.4);
     padding: 20px;
     border-radius: 2%;
-    box-shadow: 0 0 20px 5px rgb(99, 93, 93);
+    box-shadow: 0 0 10px 3px rgb(180, 176, 176);
     display:flex;
     align-items: center;
     justify-content: center;
@@ -35,10 +40,10 @@
 }
 
 .login-box{
-    height: 100%;
-    width: 90%;
-    background: rgba(255,255,255,0.6);
-    box-shadow: 2px 2px 20px rgb(99, 93, 93);
+    height: 65%;
+    width: 32%;
+    background: rgba(230, 230, 230, 0.6);
+    box-shadow: 1px 1px 10px rgba(99, 93, 93, 0.767);
     border-radius: 4%;
     display: flex;
     align-items: center;
@@ -73,13 +78,23 @@
 }
 
 .login-form>label>input{
-    height:3em;
+    height:1.8em;
     width: 350px;
     border-radius: 6px;
     outline: none;
     border: none;
+    font-size: 1.2em;
 }
 
+input[type=text] {
+    padding: 5px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  }
+
+  input[type=password] {
+    padding: 5px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  }
 .login-form>input{
     margin: 20px;
     height: 50px;
