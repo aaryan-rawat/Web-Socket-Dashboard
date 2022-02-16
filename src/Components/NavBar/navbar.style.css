@@ -1,0 +1,63 @@
+.navbar-blur{
+    top: 0px;
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    filter: blur(10px);
+    display: flex;
+}
+.navbar{
+    top: 0px;
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    background: rgba(107, 105, 105, 0.4);
+    border-bottom: 1px solid rgba(43, 39, 39, 0.5);
+    
+}
+
+.navbar-first-part{
+    /* background: aqua; */
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo{
+    margin-left:20px ;
+    cursor: pointer;
+}
+.navbar-second-part{
+    /* background:bisque; */
+    width: 30%;
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
+
+.logout{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    
+    padding: 0px;
+}
+
+.logout>span{
+    font-size: 30px;
+    padding: 0px;
+    cursor: pointer;
+    color: rgb(66, 63, 63);
+}
+
+.nav-links{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
