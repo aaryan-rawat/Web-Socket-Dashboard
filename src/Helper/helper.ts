@@ -164,5 +164,6 @@ export const stringConsts = {
 export function isAuthenticated() {
     if (getFromLocal(stringConsts.LOCAL_STORAGE.LOGGED_IN_USER))
         return true;
-    else return false;
+    else 
+    return false;
 }

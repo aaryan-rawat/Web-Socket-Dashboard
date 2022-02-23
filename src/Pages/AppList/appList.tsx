@@ -19,6 +19,7 @@ function AppList() {
     if (!appIds && localStorage.getItem("ccadmin:dashboard:loggedInUser"))
       makeApiCall("appList", undefined, {}, loggedInUser.region).then(
         (data: any['']) => {
+          console.log(data)
           if (data && data.length > 0) {
             setAppIds(data.map((item: any, i: number) => {
               return { count: i + 1, ...item }

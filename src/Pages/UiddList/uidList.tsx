@@ -1,8 +1,7 @@
 import MaterialTable from 'material-table'
 import React, { useEffect, useState } from 'react'
 import Navbar from "../../Components/NavBar/navbar";
-import Delete from '@material-ui/icons/Delete';
-import GroupIcon from '@material-ui/icons/Group';
+import Devices from '@material-ui/icons/Devices';
 import Lodder from '../../Components/Lodder/lodder';
 import { makeApiCall } from "../../Helper/helper";
 import {useLocation} from 'react-router-dom';
@@ -67,7 +66,7 @@ export default function UidList() {
                   }}
                 actions={[
                   {
-                    icon: GroupIcon,
+                    icon: Devices,
                     tooltip: 'show all devices',
                     onClick: (event, rowData) => {
                       navigate('/uiddevicelist',{state:{...rowData,data}});

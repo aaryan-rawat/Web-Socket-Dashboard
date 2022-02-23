@@ -14,12 +14,13 @@ export default function GuidList() {
   const navigate=useNavigate();
   const location = useLocation();
   let data:any=location.state;
-  console.log(data,"//////////////////////////////////")
   const [guid, setGuid] = useState();
     const loggedInUser:any= localStorage.getItem("ccadmin:dashboard:loggedInUser");
     useEffect(() => {
 		if ( !guid && localStorage.getItem("ccadmin:dashboard:loggedInUser"))
-			makeApiCall("guidList", location.state, {},loggedInUser.region ).then(
+    console.log(location.state,"0------------------------")
+    const {appId}:any=location.state;
+			makeApiCall("guidList", {appId}, {},loggedInUser.region ).then(
 				(data:any['']) => {
           
 					if (data && data.length > 0) {
@@ -37,7 +38,7 @@ export default function GuidList() {
 				}
 			);
             
-	}, [guid]);
+	}, []);
 
   return (
     <div>
@@ -68,7 +69,7 @@ export default function GuidList() {
                 actions={[
                   {
                     icon: GroupIcon,
-                    tooltip: 'show group',
+                    tooltip: 'show users count',
                     onClick: (event, rowData) => {
                       navigate('/usercountgroup',{state:{...rowData,data}});
                     } 

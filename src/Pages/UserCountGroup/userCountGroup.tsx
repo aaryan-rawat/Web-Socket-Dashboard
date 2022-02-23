@@ -69,16 +69,7 @@ export default function UserCountGroup() {
                     pageSize: 11,
                     pageSizeOptions: [12]
                   }}
-                actions={[
-                  {
-                    icon: GroupIcon,
-                    tooltip: 'show group',
-                    onClick: (event, rowData) => {
-                        console.log("You want to delete ", rowData)
-                    } 
-                  }
-
-                ]}
+                
               /> :<Lodder/> }  
           </div> 
       </div>

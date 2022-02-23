@@ -14,7 +14,7 @@ export default function Navbar() {
       <div className='navbar-blur'></div>
     <div className='navbar'>
         <div className='navbar-first-part'>
-            <div className='logo' onClick={()=>{navigate('/home')}}>
+            <div className='logo' onClick={()=>{navigate('/')}}>
                 <img src={logo} alt="BigCo Inc. logo" />
             </div>
             <div className='nav-links'>

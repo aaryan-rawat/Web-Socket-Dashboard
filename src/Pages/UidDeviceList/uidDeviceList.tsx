@@ -68,16 +68,6 @@ function UidDeviceList() {
                     pageSize: 11,
                     pageSizeOptions: [12]
                   }}
-                actions={[
-                  {
-                    icon: GroupIcon,
-                    tooltip: 'show group',
-                    onClick: (event, rowData) => {
-                     
-                    }
-                  }
-
-                ]}
               /> :<Lodder/> }  
           </div> 
       </div>

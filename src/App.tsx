@@ -9,10 +9,15 @@ import UidList from './Pages/UiddList/uidList';
 import UidDeviceList from './Pages/UidDeviceList/uidDeviceList';
 import GuidList from './Pages/GuidList/guidList';
 import UserCountGroup from './Pages/UserCountGroup/userCountGroup';
+import internal from 'stream';
 
 function App() {
+  function sum(a:number,b:number){
+    return a+b;
+  }
   return (
     <BrowserRouter>
+    <div title='random_testing_div'></div>
       <Routes>
         <Route path="/" element={<Login />}/>
         <Route path="applist" element={<AppList />} />
